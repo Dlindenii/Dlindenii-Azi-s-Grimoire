@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body{
+	font-size: 12px;
+}
+a{
+	color: black;
+}
+
+.app{
+	width: 95%;
+	height: 100%;
+	background: #eee6d9;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#username{
+	width: 100%;
+	height: 25px;
+	margin: 2px;
+	align-self: center;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.20);
+	color:#f5f6f8;
+}
+
+#password{
+	width: 100%;
+	height: 25px;
+	margin: 2px;
+	align-self: center;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.20);
+	color:#f5f6f8;
+}
+
+.side-menu{
+	width: 80px;
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f5f6f8;
+	transition: .3s;
+	overflow: hidden;
+}
+.menu-fixed{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+}
+
+.box{
+	display: block;
+	height: 50px;
+	width: 85%;
+	margin: 9px;
+	border-radius: 5px;
+	position: relative;
+	transform: .3s;
+	flex-shrink: 0;
+	color: #f8b461;
+}
+
+.box i{
+	font-size: 40px;
+	position: absolute;
+	margin: 7px 0 0 13px;
+	color: inherit;
+}
+.box span{
+	position: relative;
+	top: 15px;
+	left: 80px;
+	opacity: 0;
+	transition: .1s;
+	color: inherit;
+}
+.box:nth-child(5)::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #f8b461;
+	position: absolute;
+	bottom: -10px;
+}
+.side-menu:hover{
+	width: 200px;
+}
+.box:hover{
+	background-color: #f8b461;
+	color: #f5f6f8;
+	
+}
+.side-menu:hover span{
+	opacity: 1;
+}
+
+
+
+table{
+	*border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%
+}
+.bordered{
+	
+	border: 1px solid #CCCCCC;
+	border-radius: 6px;
+	box-shadow: 0 1px 1 px #CCCCCC;
+	display:table;
+}
+.bordered td:hover{
+	background:#fbf8e9;
+	transition:all 0.1s ease-in-out;
+}
+.bordered td{
+	width: 14%;
+	display: table-cell;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	padding:10px;
+	text-align: center;
+	
+}
+.bordered th{
+	display: table-cell;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	padding:10px;
+	text-align: center;
+	background: #eee6d9;
+	background-image: linear-gradient(top, #EBF3FC, #DCE9F79);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+.bordered td:first-child{
+	border-left: none;
+}
+.bordered th:first-child{
+	border-left: none;
+	border-radius: 6px 0 0 0;
+}
+.bordered th :last-child{
+	border-radius: 0 6px 0 0;
+}
+.border th:only-child{
+	border-radius: 6px 6px 0 0;
+}
+.border tr:last-child td:first-child{
+	border-radius:  0 0 0 6px;	
+}
+.bordered tr:last-child td:last-child{
+	border-radius: 0 0 6px 0;
+}
+
+
+header{
+	display: flex;
+	height: 30px;
+	padding: 4px;
+	background: white;
+}
+
+article{
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+		
+.text-5xl{
+	margin: 50px 0px 50px;
+	text-align: center;
+	font-size: 40px;
+}
+.text-left{
+	text-align: left;
+}
+
+.inline-flex{
+	height: 100%;
+	text-align: left;	
+}
+.inline-flex::before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.inline-flex .items-center{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.items-center{
+	align-items: center;
+}
+
+
+.flex{
+	display: flex;
+}
+.flex-row{
+	display: flex;
+	flex-direction: column;
+}
+.no-shrink{
+	flex-shrink: 0;
+}
+.flex-grow{
+	flex-grow: 99;
+}
+.block{
+	display: block
+}
+.justify-center{
+	justify-content: center;
+}
+
+.border-b{
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 2px; 
+}
+.border-solid{
+	border-style: solid;
+}
+.border-light{
+	border-color: #f8b461;
+}
+.r-1{
+	border-radius: 10px;
+}
+.rounded-full{
+	border: 3px solid #f8b461;
+	border-radius: 100%;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.inline-block{
+	display: inline-block;
+}
+.m-0{
+	margin: 0px;
+}
+
+.m-2{
+	margin: 20px;
+}
+.h-8{
+	height: 80px;
+}
+.h-5{
+	height: 50px;
+}
+.w-5{
+	width: 50px;
+}
+.h-16{
+	height: 160px;
+}
+.w-16{
+	width: 160px;
+}
+.h-full{
+	height: 100%;
+}
+.w-full{
+	width: 100%;
+}
+
+.items-center{
+	align-items: center;
+}
+.bg-white{
+	background: #f5f6f8;
+}
+.hover-none:hover{
+	background-color: inherit;
+}
+.overflow-hid{
+	overflow: hidden;
+}
+.no-derection{
+	text-decoration: none;
+}
