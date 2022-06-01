@@ -286,7 +286,8 @@ article{
 	align-items: center;
 }
 .bg-white{
-	background: #f5f6f8;
+	background: #ffffff;
+//	background: #f5f6f8;
 }
 .hover-none:hover{
 	background-color: inherit;
